@@ -83,5 +83,3 @@ Contribuições são bem-vindas! Se quiser melhorar este projeto, siga as etapas
 4. **Envie um pull request** para análise.
 
 ---
-Desenvolvido com ❤️ por [Seu Nome]
-
