@@ -1,0 +1,15 @@
+name: Deploy App
+on:
+  push:
+    branches:
+    - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build Docker image
+        run: docker build -t app-deploy-demo .
+      - name: run Docker container
+        run: docker run -d -p 80:80 app-deploy-demo
